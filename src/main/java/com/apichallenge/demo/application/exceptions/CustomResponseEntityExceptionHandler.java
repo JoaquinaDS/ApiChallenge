@@ -27,15 +27,8 @@ public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptio
     }
 
     private RestError createExceptionResponseBody(final Exception exception, final HttpStatus httpStatus) {
-        String errorMessage;
         log.error( String.format( ERROR_S, exception.getMessage() ), exception );
-        if (exception instanceof MainException && ((MainException) exception).getErrorMessage() != null) {
-            errorMessage = ((MainException) exception).getErrorMessage();
-        } else {
-            errorMessage = "Unknown error";
-        }
-        return new RestError(httpStatus.value(), errorMessage);
-
+        return new RestError(httpStatus.value(), exception.getMessage());
     }
 
 }

@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -24,9 +25,9 @@ public class PriceEntity {
     @Nonnull
     private Long brandId;
     @Nonnull
-    private Date startDate;
+    private LocalDateTime startDate;
     @Nonnull
-    private Date endDate;
+    private LocalDateTime endDate;
     @Nonnull
     private Long feeId;
     @Nonnull
