@@ -6,32 +6,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "PRICES")
-public class PriceEntity {
+@Table(name = "FEES")
+public class FeeEntity {
 
     @Id
     @Nonnull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Nonnull
-    private Long productId;
-    @Nonnull
-    private Long brandId;
-    @Nonnull
-    private Date startDate;
-    @Nonnull
-    private Date endDate;
-    @Nonnull
-    private Long feeId;
-    @Nonnull
-    private Double price;
-    @Nonnull
-    private byte priority;
+    private Double percentage;
 
 }

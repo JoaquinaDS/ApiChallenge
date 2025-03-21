@@ -1,9 +1,33 @@
 price:
   get:
-    description:
+    description: Endpoint to get Price Data for a specific date, product and brand.
     tags:
       - price-controller
-    operationId: get
+    operationId: getBy
+    parameters:
+          - name: date
+            in: query
+            description: Date for which the price is requested
+            required: true
+            schema:
+              type: string
+              format: date-time
+          - name: productId
+            in: query
+            description: The ID of the product
+            required: true
+            schema:
+              type: integer
+              format: int64
+              example: 18
+          - name: brandId
+            in: query
+            description: The ID of the brand
+            required: true
+            schema:
+              type: integer
+              format: int64
+              example: 1
     responses:
       200:
         description: OK
