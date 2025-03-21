@@ -170,7 +170,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<inputSpec>${project.basedir}/src/main/resources/openapi.yaml</inputSpec>
+							<inputSpec>${project.basedir}/src/main/resources/openapi/openapi.yaml</inputSpec>
 							<generatorName>spring</generatorName>
 							<apiPackage>com.apichallenge.demo.infrastructure.adapter.in.web</apiPackage>
 							<modelPackage>com.apichallenge.demo.infrastructure.adapter.in.web.dto</modelPackage>
@@ -201,7 +201,7 @@
 							<goal>validate</goal>
 						</goals>
 						<configuration>
-							<inputSpec>${project.basedir}/src/main/resources/openapi.yaml</inputSpec>
+							<inputSpec>${project.basedir}/src/main/resources/openapi/openapi.yaml</inputSpec>
 						</configuration>
 					</execution>
 				</executions>

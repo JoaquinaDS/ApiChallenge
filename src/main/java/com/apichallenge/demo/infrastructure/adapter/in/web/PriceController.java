@@ -4,9 +4,7 @@ import com.apichallenge.demo.application.port.in.GetPriceByDateProductAndBrandUs
 import com.apichallenge.demo.infrastructure.adapter.in.web.dto.PriceDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
 @AllArgsConstructor
 public class PriceController implements PriceApi {
 
