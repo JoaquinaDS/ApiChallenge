@@ -1,0 +1,11 @@
+openapi: 3.0.3
+info:
+  title: Price API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Local Server
+paths:
+  # Prices
+  /price:
+    $ref: "./api/price.api#/price"
