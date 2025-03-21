@@ -1,6 +1,6 @@
 package com.apichallenge.demo.application.services;
 
-import com.apichallenge.demo.application.mapper.PriceEntityMapper;
+import com.apichallenge.demo.application.mappers.PriceEntityMapper;
 import com.apichallenge.demo.application.port.out.FeeRepositoryPort;
 import com.apichallenge.demo.application.port.out.PriceRepositoryPort;
 import com.apichallenge.demo.domain.exceptions.PriceNotFoundException;

@@ -1,4 +1,4 @@
-package com.apichallenge.demo.application.mapper;
+package com.apichallenge.demo.application.mappers;
 
 import com.apichallenge.demo.domain.models.Price;
 import com.apichallenge.demo.infrastructure.adapter.out.persistence.entities.PriceEntity;
