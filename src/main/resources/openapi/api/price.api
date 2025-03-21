@@ -1,0 +1,28 @@
+price:
+  get:
+    description:
+    tags:
+      - price-controller
+    operationId: get
+    responses:
+      200:
+        description: OK
+        content:
+          '*/*':
+            schema:
+              $ref: "../model/price.model.yaml#/PriceDTO"
+          application/json;charset=UTF-8:
+            schema:
+              $ref: "../model/price.model.yaml#/PriceDTO"
+      400:
+        description: Bad Request
+        content:
+          '*/*':
+            schema:
+              $ref: "../model/error.model.yaml#/RestError"
+      500:
+        description: Internal Server Error
+        content:
+          '*/*':
+            schema:
+              $ref: "../model/error.model.yaml#/RestError"

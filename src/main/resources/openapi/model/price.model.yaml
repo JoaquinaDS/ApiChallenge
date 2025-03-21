@@ -1,0 +1,6 @@
+PriceDTO:
+  type: object
+  properties:
+    code:
+      type: integer
+      format: int32
