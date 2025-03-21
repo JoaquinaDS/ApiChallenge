@@ -29,6 +29,7 @@ For building and running the application you need:
 - **Mockito**
 - **MapStruct**
 - **Lombok**
+- **OpenAPI** for API documentation
 
 ## Accessing the Database
 The project uses **H2 Database** in memory. To access the H2 web console, follow these steps:
@@ -72,3 +73,9 @@ JaCoCo is used to measure code coverage in unit tests. To generate and view the 
 or execute the `main` method in the `DemoApplication` class from your IDE
 
 3. The web application is accesible via `http://localhost:8080`.
+
+## API Documentation with OpenAPI
+
+The project uses **OpenAPI** to automatically generate and document the REST API. Once the application is running, you can access the API documentation at:
+
+[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
