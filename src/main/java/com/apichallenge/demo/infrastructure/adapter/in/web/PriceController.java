@@ -16,7 +16,6 @@ import java.time.OffsetDateTime;
 @RestController
 public class PriceController implements PriceApi {
 
-
     @Autowired
     private GetPriceByDateProductAndBrandUseCase getPriceByDateProductAndBrandUseCase;
     @Autowired
